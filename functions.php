@@ -64,8 +64,7 @@ if (function_exists('add_theme_support'))
 // HTML5 Blank navigation
 function byu2017_wp_nav()
 {
-	wp_nav_menu(
-	array(
+	$menuParameters = array(
 		'theme_location'  => 'header-menu',
 		'menu'            => '',
 		'container'       => false,
@@ -82,8 +81,8 @@ function byu2017_wp_nav()
 		'items_wrap'      => '%3$s',
 		'depth'           => 0,
 		'walker'          => ''
-		)
 	);
+	echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
 }
 
 // Load HTML5 Blank scripts (header.php)
