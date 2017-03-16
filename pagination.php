@@ -1,5 +1,5 @@
 <!-- pagination -->
 <div class="pagination">
-	<?php html5wp_pagination(); ?>
+	<?php byu2017wp_pagination(); ?>
 </div>
 <!-- /pagination -->

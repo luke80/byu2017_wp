@@ -25,17 +25,17 @@
 
 			<!-- post details -->
 			<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
+			<span class="author"><?php _e( 'Published by', 'byu2017_wp' ); ?> <?php the_author_posts_link(); ?></span>
+			<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'byu2017_wp' ), __( '1 Comment', 'byu2017_wp' ), __( '% Comments', 'byu2017_wp' )); ?></span>
 			<!-- /post details -->
 
 			<?php the_content(); // Dynamic Content ?>
 
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+			<?php the_tags( __( 'Tags: ', 'byu2017_wp' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
-			<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+			<p><?php _e( 'Categorised in: ', 'byu2017_wp' ); the_category(', '); // Separated by commas ?></p>
 
-			<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
+			<p><?php _e( 'This post was written by ', 'byu2017_wp' ); the_author(); ?></p>
 
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 
@@ -51,7 +51,7 @@
 		<!-- article -->
 		<article>
 
-			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
+			<h1><?php _e( 'Sorry, nothing to display.', 'byu2017_wp' ); ?></h1>
 
 		</article>
 		<!-- /article -->
