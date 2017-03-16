@@ -21,21 +21,12 @@
 			tests: {}
 		});
 		</script>
-		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/75214/6517752/css/fonts.css" />
 		<script src="//cdn.byu.edu/2017-core-components/latest/components.js"></script>
 	</head>
 	<body <?php body_class(); ?>>
 
 	<div role="document" class="page wrapper">
 		<byu-header>
-			<!-- logo -->
-			<div class="logo">
-				<a href="<?php echo home_url(); ?>">
-					<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-				</a>
-			</div>
-			<!-- /logo -->
 
 			<byu-user-info slot="user">
 				<a slot="login" href="/user">Sign In</a>
@@ -61,5 +52,13 @@
 		</byu-header>
 		<!-- header -->
 		<header class="header clear l-header" role="banner">
+			<!-- logo -->
+			<div class="logo">
+				<a href="<?php echo home_url(); ?>">
+					<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
+				</a>
+			</div>
+			<!-- /logo -->
 		</header>
 		<!-- /header -->
