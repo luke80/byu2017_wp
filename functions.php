@@ -69,7 +69,7 @@ function byu2017_wp_nav()
 	array(
 		'theme_location'  => 'header-menu',
 		'menu'            => '',
-		'container'       => 'div',
+		'container'       => '',
 		'container_class' => 'menu-{menu slug}-container',
 		'container_id'    => '',
 		'menu_class'      => 'menu',
@@ -80,7 +80,7 @@ function byu2017_wp_nav()
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
+		'items_wrap'      => '%3$s',
 		'depth'           => 0,
 		'walker'          => ''
 		)
@@ -91,13 +91,15 @@ function byu2017_wp_nav()
 function byu2017_wp_header_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
-
     	wp_register_script('conditionizr', get_template_directory_uri() . '/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0'); // Conditionizr
         wp_enqueue_script('conditionizr'); // Enqueue it!
 
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
+    	wp_register_script('byu2017cdn_scripts', '//cdn.byu.edu/2017-core-components/latest/components.js', array(), 'x.0.0'); // BYU Web CDN
+        wp_enqueue_script('byu2017cdn_scripts'); // Enqueue it!
+       
         wp_register_script('byu2017_wpscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('byu2017_wpscripts'); // Enqueue it!
     }
@@ -119,6 +121,9 @@ function byu2017_wp_styles()
     wp_enqueue_style('normalize'); // Enqueue it!
 
     wp_register_style('byu2017_wp', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+    wp_enqueue_style('byu2017_wp'); // Enqueue it!
+    
+    wp_register_style('byu2017_wp', '//cloud.typography.com/75214/6517752/css/fonts.css', array(), '1.0', 'all');
     wp_enqueue_style('byu2017_wp'); // Enqueue it!
 }
 

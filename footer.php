@@ -3,8 +3,7 @@
 
 				<!-- copyright -->
 				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'byu2017_wp'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//byu2017_wp.com" title="HTML5 Blank">HTML5 Blank</a>.
+					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.</a>.
 				</p>
 				<!-- /copyright -->
 

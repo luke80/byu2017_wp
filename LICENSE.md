@@ -1,8 +1,14 @@
+# byu2017_wp License extends HTML5 Blank License
+
+Copyright &copy; 2017 byu2017_wp
+
+Developed in imitation of HTML5 Blank (below)
+
 # [HTML5 Blank](http://byu2017_wp.com) License
 
 ## MIT License
 
-Copyright &copy; 2013 HTML5 Blank // @byu2017_wp
+Copyright &copy; 2013 HTML5 Blank
 
 Built by Todd Motto // @toddmotto
 
