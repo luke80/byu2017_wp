@@ -37,11 +37,6 @@
 			</div>
 			<!-- /logo -->
 
-			<!-- nav -->
-			<nav class="nav" role="navigation">
-				<?php byu2017_wp_nav(); ?>
-			</nav>
-			<!-- /nav -->
 			<byu-user-info slot="user">
 				<a slot="login" href="/user">Sign In</a>
 				<!-- if you are using CAS, use the CAS sign out link instead: -->
@@ -58,8 +53,11 @@
 			</byu-user-info>
 			<byu-search slot="search">
 			</byu-search>
-			<byu-menu slot="nav" collapsed id="main-menu" class="navigation" role="navigation">
+			<!-- nav -->
+			<byu-menu slot="nav" collapsed id="main-menu" class="navigation nav" role="navigation">
+				<?php byu2017_wp_nav(); ?>
 			</byu-menu>
+			<!-- /nav -->
 		</byu-header>
 		<!-- header -->
 		<header class="header clear l-header" role="banner">
