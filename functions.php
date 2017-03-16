@@ -1,7 +1,6 @@
 <?php
 /*
- *  Author: Todd Motto | @toddmotto
- *  URL: byu2017_wp.com | @byu2017_wp
+ *  Author: Luke Rebarchik
  *  Custom functions, support, custom post types and more.
  */
 
@@ -69,12 +68,12 @@ function byu2017_wp_nav()
 	array(
 		'theme_location'  => 'header-menu',
 		'menu'            => '',
-		'container'       => '',
+		'container'       => false,
 		'container_class' => 'menu-{menu slug}-container',
 		'container_id'    => '',
 		'menu_class'      => 'menu',
 		'menu_id'         => '',
-		'echo'            => true,
+		'echo'            => false,
 		'fallback_cb'     => 'wp_page_menu',
 		'before'          => '',
 		'after'           => '',
