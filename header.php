@@ -27,7 +27,7 @@
 
 	<div role="document" class="page wrapper">
 		<byu-header>
-
+			<span slot="title"><?php bloginfo('name'); ?></span>
 			<byu-user-info slot="user">
 				<a slot="login" href="/user">Sign In</a>
 				<!-- if you are using CAS, use the CAS sign out link instead: -->
@@ -42,8 +42,7 @@
 					</span>
 				<?php endif; */ ?>
 			</byu-user-info>
-			<byu-search slot="search">
-			</byu-search>
+			<?php get_search_form(); ?>
 			<!-- nav -->
 			<byu-menu slot="nav" collapsed id="main-menu" class="navigation nav" role="navigation">
 				<?php byu2017_wp_nav(); ?>
